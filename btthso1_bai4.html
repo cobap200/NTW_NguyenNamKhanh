@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+    <form>
+        <h3>Basic Info</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Employee ID</td>
+                <td><input type="text" name="employee_id"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="last_name"></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="first_name"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> XXX
+                    <input type="radio" name="gender"> ZZZ
+                </td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" name="title"></td>
+            </tr>
+            <tr>
+                <td>Suffix</td>
+                <td><input type="text" name="suffix"></td>
+            </tr>
+            <tr>
+                <td>BirthDate</td>
+                <td><input type="datetime-local" name="birth_date"></td>
+            </tr>
+            <tr>
+                <td>HireDate</td>
+                <td><input type="datetime-local" name="hire_date"></td>
+            </tr>
+            <tr>
+                <td>SSN #</td>
+                <td><input type="text" name="ssn"></td>
+            </tr>
+            <tr>
+                <td>Reports To</td>
+                <td>
+                    <select name="reports_to">
+                        <option value="">-- Select --</option>
+                        <option>Buchanan</option>
+                        <!-- More options if needed -->
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Contact Info</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>Region</td>
+                <td><input type="text" name="region"></td>
+            </tr>
+            <tr>
+                <td>Postal Code</td>
+                <td><input type="text" name="postal_code"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country">
+                        <option value="">-- Select Country --</option>
+                        <option>Russian Federation</option>
+                        <!-- More countries if needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>US Home Phone</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td><input type="text" name="photo"></td>
+            </tr>
+        </table>
+
+        <h3>Optional Info</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Notes</td>
+                <td>
+                    <textarea name="notes" rows="5" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Shift</td>
+                <td>
+                    <input type="radio" name="shift"> Regular
+                    <input type="radio" name="shift"> Graveyard
+                </td>
+            </tr>
+            <tr>
+                <td>Active?</td>
+                <td><input type="checkbox" name="active"></td>
+            </tr>
+            <tr>
+                <td>Are you human?</td>
+                <td>
+                    <img src="#" alt="Captcha"><br>
+                    <input type="text" name="captcha">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
